@@ -1,0 +1,212 @@
+/* --- Base Styles & Typography --- */
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+/* Headings color set to #eb9c57 */
+h1 {
+  color: #eb9c57;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+}
+
+h2 {
+  color: #eb9c57;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #eb9c57;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Regular text color set to dark gray */
+p {
+  line-height: 2;
+  color: #40514E;
+}
+
+hr {
+  border: dotted #829191 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+/* --- Top Container --- */
+.top-container {
+  background-color: #81c9e7;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.title-text {
+  margin-bottom: 40px;
+  position: relative; 
+  z-index: 1;
+}
+
+.airplane {
+  width: 45%; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* Clouds Positioning */
+.top-cloud {
+  position: absolute;
+  right: 15%;
+  top: 40px;
+}
+
+.middle-left-cloud {
+  position: absolute;
+  left: 15%;
+  top: 150px;
+  z-index: 0;
+}
+
+.airplane-cloud {
+  position: absolute;
+  right: 15%;
+  bottom: 80px; /* Positioned to the right of the airplane */
+}
+
+/* --- Middle Container & Profile --- */
+.middle-container {
+  margin: 100px 0;
+}
+
+#waving {
+  height: 105px; /* Increased by ~20% */
+  display: block;
+  margin: 0 auto;
+}
+
+.intro {
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* --- Skills & Grid Layout --- */
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  width: 50%;
+  margin: 80px auto 0 auto;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+.media-container {
+  text-align: center;
+}
+
+.text-container {
+  text-align: left;
+}
+
+.circular-media {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Contact Me --- */
+.contact-me {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.btn {
+  background-color: #81c9e7; /* Light blue background */
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #40514E; /* Dark gray text */
+  font-size: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #085e99; /* Dark blue on hover */
+  color: #ffffff;
+}
+
+/* --- Footer --- */
+.bottom-container {
+  background-color: #81c9e7;
+  padding: 50px 0 20px;
+}
+
+.footer-link {
+  color: #000000; /* Links in black */
+}
+
+.footer-link:hover {
+  color: #40514E; /* Hover changes to dark gray */
+}
+
+.copyright {
+  color: #40514E;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+/* --- Responsiveness for Mobile Devices (Media Query) --- */
+@media (max-width: 900px) {
+  
+  /* Make text blocks wider on small screens */
+  .intro, .contact-message {
+    width: 80%;
+  }
+  
+  /* Change Grid from 2 columns to 1 column */
+  .parent {
+    width: 90%;
+    grid-template-columns: 1fr; /* Takes up the full width, stacking elements */
+    text-align: center;
+  }
+  
+  /* Center the text under the images on mobile */
+ .text-container {
+    text-align: center;
+    margin-left: 0;
+  }
+  
+  /* Make the airplane slightly larger on mobile */
+  .airplane {
+    width: 80%;
+  }
+
+  /* Adjust clouds for smaller screens */
+  .top-cloud {
+    right: 5%;
+  }
+  
+  .middle-left-cloud {
+    left: 5%;
+  }
+}

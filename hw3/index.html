@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matan Ben Shmuel - Jungle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="main-title">Welcome to the jungle!</h1>
+    </header>
+
+    <main class="jungle-grid">
+        <div class="animal-card" id="donkey" onclick="playAnimal('donkey')">
+            <img src="images/donkey.png" alt="Donkey">
+            <span class="key-hint">D</span>
+            <audio id="audio-donkey" src="sounds/donkey.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="cow" onclick="playAnimal('cow')">
+            <img src="images/cow.png" alt="Cow">
+            <span class="key-hint">C</span>
+            <audio id="audio-cow" src="sounds/cow.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="dog" onclick="playAnimal('dog')">
+            <img src="images/dog.png" alt="Dog">
+            <span class="key-hint">G</span>
+            <audio id="audio-dog" src="sounds/dog.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="dolphin" onclick="playAnimal('dolphin')">
+            <img src="images/dolphin.png" alt="Dolphin">
+            <span class="key-hint">L</span>
+            <audio id="audio-dolphin" src="sounds/dolphin.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="horse" onclick="playAnimal('horse')">
+            <img src="images/horse.png" alt="Horse">
+            <span class="key-hint">H</span>
+            <audio id="audio-horse" src="sounds/horse.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="seagull" onclick="playAnimal('seagull')">
+            <img src="images/seagull.png" alt="Seagull">
+            <span class="key-hint">S</span>
+            <audio id="audio-seagull" src="sounds/seagull.mp3"></audio>
+        </div>
+
+        <div class="animal-card" id="snake" onclick="playAnimal('snake')">
+            <img src="images/snake.png" alt="Snake">
+            <span class="key-hint">N</span>
+            <audio id="audio-snake" src="sounds/snake.mp3"></audio>
+        </div>
+    </main>
+
+    <button id="music-toggle" class="music-control">
+        <span id="toggle-icon">🔊</span> 
+        <span id="toggle-text">Music: ON (M)</span>
+    </button>
+
+    <audio id="bg-music" src="sounds/background.mp3" loop ></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
